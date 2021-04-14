@@ -12,5 +12,5 @@ do
     fi
     ((counter++))
 done
-echo "Du hast gewonnen. Du hast es zum $counter mal"
+echo "Du hast gewonnen. 
 

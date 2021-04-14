@@ -6,9 +6,9 @@ gameloop() {
     do
         nummer=$(dialog --inputbox "Wie heisst die Nummer?" 0 0 2>&1 >/dev/tty)
         if [ "$nummer" -lt "$variable1" ]; then
-        dialog --msgbox "Deine Zahl ist zu klein" 0 0
+            dialog --msgbox "Deine Zahl ist zu klein" 0 0
         elif [ "$nummer" -gt "$variable1" ]; then
-        dialog --msgbox "Deine Zahl ist zu gross" 0 0
+            dialog --msgbox "Deine Zahl ist zu gross" 0 0
         fi
         ((counter++))
     done
