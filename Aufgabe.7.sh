@@ -12,14 +12,14 @@ gameloop() {
         fi
         ((counter++))
     done
-    dialog --msgbox "Du hast gewonnen. Du hast es zum $counter mal geschafft" 0 0
+    dialog --msgbox "Du hast gewonnen. Das richtige Zahl war $variable1 Du hast es zum $counter mal geschafft" 0 0
     dialog --yesno "Willst du nocheinmal spielen?" 0 0
-    0=yes;  1=no
     antwort=$?
     dialog clear
-    if [ $antwort = 1]
-    
-    
-
+    if [ $antwort == 0 ]; then
+        gameloop
+    else 
+        clear
+    fi
 }
 gameloop
